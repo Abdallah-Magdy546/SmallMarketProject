@@ -1,0 +1,18 @@
+<div style=" padding: 25px;">
+  <table style="border: 3px gray solid; width: 100%;">
+    <tr>
+      <th>PRODUCT NAME</th>
+      <th>PRODUCT PRICE</th>
+      <th>PRODUCT NUMBER IN STOCK</th>
+      <th>Details</th>
+    </tr>
+    <tr *ngFor="let product of products">
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.amountInStore}}</td>
+      <td><a routerLink="{{product.id}}">Details</a></td>
+    </tr>
+   </table>
+
+
+</div>
